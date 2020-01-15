@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Pierre SMARS smars@yuntech.edu.tw
+MAINTAINER Pierre SMARS
 LABEL tw.edu.yuntech.smars.version="0.2-beta" \
       tw.edu.yuntech.smars.release-date="2020-01-15"
 RUN apk update && \
