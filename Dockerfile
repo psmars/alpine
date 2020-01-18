@@ -1,6 +1,6 @@
 FROM alpine:latest
 MAINTAINER Pierre SMARS
-LABEL tw.edu.yuntech.smars.version="0.3" \
+LABEL tw.edu.yuntech.smars.version="0.4" \
       tw.edu.yuntech.smars.release-date="2020-01-18"
 RUN apk update && \
 	apk add --no-cache\
@@ -23,12 +23,12 @@ RUN apk update && \
 	zip \
 	unrar
 	
-COPY config /root/config
+COPY config /usr/share/absps/config
 
 ENV EDITOR="/usr/bin/nvim"
 RUN find /root -type f -exec chmod 0640 {} \; && \
 	chmod 0700 /root/config/install
 WORKDIR /root
-CMD /root/config/install && \
+CMD /usr/share/absps/config/install && \
 	/bin/zsh
 
