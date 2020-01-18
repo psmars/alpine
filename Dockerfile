@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Pierre SMARS
-LABEL tw.edu.yuntech.smars.version="0.4" \
-      tw.edu.yuntech.smars.release-date="2020-01-18"
+LABEL tw.edu.yuntech.smars.version="0.5" \
+      tw.edu.yuntech.smars.release-date="2020-01-19"
 RUN apk update && \
 	apk add --no-cache\
 	zsh \
