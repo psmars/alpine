@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Pierre SMARS
-LABEL tw.edu.yuntech.smars.version="0.5" \
-      tw.edu.yuntech.smars.release-date="2020-01-19"
+LABEL tw.edu.yuntech.smars.version="0.6" \
+      tw.edu.yuntech.smars.release-date="2020-12-07"
 RUN apk update && \
 	apk add --no-cache\
 	zsh \
@@ -9,6 +9,7 @@ RUN apk update && \
 	zsh-syntax-highlighting \
 	shadow \
 	less \
+	file \
 	procps \
 	usbutils \
 	htop \
