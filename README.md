@@ -19,7 +19,6 @@ Small docker linux image based on alpine
 - openssh-client
 - screen
 - zip
-- unrar
 ## Customisation
 - vim
 - screen
