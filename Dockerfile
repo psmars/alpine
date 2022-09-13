@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Pierre SMARS
 LABEL tw.edu.yuntech.smars.version="0.7" \
-      tw.edu.yuntech.smars.release-date="2022-09-13"
+      tw.edu.yuntech.smars.release-date="2022-03-18"
 RUN apk update && \
 	apk add --no-cache\
 	zsh \
@@ -22,7 +22,7 @@ RUN apk update && \
 	openssh-client \
 	screen \
 	zip
-	
+
 COPY config /usr/share/absps/config
 
 ENV EDITOR="/usr/bin/nvim"
